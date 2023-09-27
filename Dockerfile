@@ -5,6 +5,7 @@ WORKDIR /app
 COPY go.mod ./
 COPY main.go ./
 
+# compilando o código-fonte go e criando executavel server
 RUN go build -o /server
 
 FROM gcr.io/distroless/base-debian10
