@@ -1,0 +1,10 @@
+CRIAR IMAGEM
+
+- docker build -t gustajab/my-server-distroless:latest .
+- docker push gustajab/my-server-distroless:latest 
+
+ACESSAR EM OUTRA MÁQUINA
+
+- docker pull gustajab/my-server-distroless:latest 
+- docker build -t gustajab/my-server-distroless .
+- docker run -it gustajab/my-server-distroless:latest
